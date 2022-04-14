@@ -32,7 +32,7 @@ section.alternate-background {
 }
 
 main img {
-  width: 100px;
+  width: 100%;
 }
 
 /* ---  Groups & Items --- */
@@ -47,10 +47,6 @@ main img {
   margin: 10px;
 }
 
-.item-double {
-  flex: 2;
-}
-
 /* -------  Navigation ------- */
 
 header {
@@ -61,8 +57,14 @@ header {
 
 .logo {
   font-family: "Tangerine", cursive;
-  font-size: 72px;
+  font-size: 3.3rem;
   color: #ecdbc9;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15px;
 }
 
 header nav ul li {
@@ -86,6 +88,11 @@ form {
   padding: 10px;
 }
 
+form div {
+  display: flex;
+  justify-content: space-between;
+}
+
 form label {
   font-weight: bold;
 }
@@ -93,7 +100,7 @@ form label {
 form select,
 form input {
   margin-bottom: 20px;
-  width: 180px;
+  width: 7rem;
 }
 
 form button {
@@ -118,3 +125,40 @@ footer p {
 }
 
 /* -------  Media Query ------- */
+
+@media all and (min-width: 480px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 2rem;
+  }
+
+  header .logo {
+    font-size: 2rem;
+    padding-bottom: 20px;
+  }
+
+  form select,
+  form input {
+    width: 9rem;
+  }
+
+  .group {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .item-double {
+    flex: 2;
+  }
+
+  .left-item {
+    display: flex;
+  }
+
+  .left-item  img{
+    padding: 7px;
+    width: 25vw;
+  }
+}
