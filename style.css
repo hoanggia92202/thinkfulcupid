@@ -167,13 +167,13 @@ footer p {
 
   /* ------- About  ------- */
 
-  .about-left-item {
-    display: flex;
+   #about .item {
+    width: 50%;
   }
 
-  .about-left-item  img{
-    padding: 7px;
-    width: 25vw;
+  .group .about-left-item {
+    display: flex;
+    width: 50%;
   }
 
   /* -------  Download  ------- */
